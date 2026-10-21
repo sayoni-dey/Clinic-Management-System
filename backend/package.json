@@ -1,12 +1,23 @@
 {
-  "name": "backend",
+  "name": "clinic-management-backend",
   "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "Sayoni Dey",
-  "type": "commonjs",
-  "main": "index.js",
+  "private": true,
+  "description": "Backend for the Clinic Management System",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.10.1",
+    "@prisma/client": "^7.10.1",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "prisma": "^7.10.1"
   }
 }
